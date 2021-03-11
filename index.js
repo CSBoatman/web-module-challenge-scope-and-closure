@@ -29,10 +29,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   
   1. What is the difference between counter1 and counter2?
   
+    Counter 1 only references things from it's local scope. Counter 2 references things from it's local scope and the global scope.
+
   2. Which of the two uses a closure? How can you tell?
+
+    Counter 2 uses a closure because it references the variable count in the global scope.
   
-  3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+  3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better?
+
+    Counter 1 would be preferrable if you need a counter that resets after it has been run but counter 2 would be preferrable if you need a counter that doesn't reset after each run.
+
 */
 
 // counter1 code
