@@ -69,10 +69,11 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(team){
-    return function() {
-      const points = Math.floor(Math.random() * 2);
-    };
-};
+  return function() {
+    const points = Math.floor(Math.random() * 2);
+    console.log(`${team} scored ${points}`);
+  }
+}
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -89,7 +90,7 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
+function finalScore(cb, numInn){
   /*Code Here*/
 }
 
