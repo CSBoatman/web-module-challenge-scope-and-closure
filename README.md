@@ -44,7 +44,7 @@ Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
 
-	Closure in JavaScript is where a function references to anything outside of its own local scope.
+	Closure in JavaScript is where a function references to anything outside of its own local scope and has to reach outside of it's local scope to retrieve information.
 
 2. Study the following code, then answer the questions below.
 
@@ -67,8 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+	There isn't any closure used in the code, you can tell because everything used inside 'function()' is declared inside itself and doesn't need to reach outside of it's own scope to find any information.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+	If you were to call 'dansRoll' twice, in the console.log the information that would stay the same is the name, while the information that would change is the number created from 'newRoll' because it uses 'Math.random' so the number should change each time.
+
 c. What is the lexical scope of `newRoll`? 
+
+	The lexical scope of 'newRoll' is everything inside of 'return function()' because it is a variable declared inside the function.
 
 
 ### Task 3 - Stretch Goals
