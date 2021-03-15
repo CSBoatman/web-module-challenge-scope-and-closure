@@ -158,8 +158,13 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(cb1, cb2, numInn) {
+  let array = [];
+  if () {
+
+  } else {
+    
+  }
 }
 
 
